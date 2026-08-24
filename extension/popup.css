@@ -1,0 +1,106 @@
+body {
+    width: 430px;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+h2 {
+    margin: 0 0 18px 0;
+    font-size: 22px;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+h4 {
+    margin-bottom: 8px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    min-height: 85px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background: white;
+}
+
+button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 11px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#analysisSection,
+#requirementSection,
+#evaluationSection {
+    margin-top: 18px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#analysisSection {
+    border-left: 4px solid #777;
+}
+
+#requirementSection {
+    border-left: 4px solid #333;
+}
+
+#evaluationSection {
+    border-left: 4px solid #555;
+}
+
+#ambiguity,
+#question,
+#requirement,
+#improvementSummary {
+    line-height: 1.5;
+}
+
+#type,
+#category {
+    font-weight: bold;
+}
+
+#status {
+    margin-top: 12px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+p {
+    line-height: 1.4;
+}

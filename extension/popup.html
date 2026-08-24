@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Requirement Assistant</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <h2>AI Requirement Assistant</h2>
+
+    <label for="statement">
+        Stakeholder Statement
+    </label>
+
+    <textarea
+        id="statement"
+        placeholder="Enter a stakeholder statement..."
+    ></textarea>
+
+    <button id="analyzeButton">
+        Analyze Requirement
+    </button>
+
+    <div id="analysisSection" class="hidden">
+
+        <h3>AI Analysis</h3>
+
+        <p><strong>Ambiguity:</strong></p>
+        <p id="ambiguity"></p>
+
+        <p><strong>Clarification Question:</strong></p>
+        <p id="question"></p>
+
+        <label for="response">
+            Stakeholder Response
+        </label>
+
+        <textarea
+            id="response"
+            placeholder="Enter the stakeholder's response..."
+        ></textarea>
+
+        <button id="generateButton">
+            Generate Refined Requirement
+        </button>
+
+    </div>
+
+    <div id="requirementSection" class="hidden">
+
+        <h3>Refined Requirement</h3>
+
+        <p id="requirement"></p>
+
+        <p>
+            <strong>Type:</strong>
+            <span id="type"></span>
+        </p>
+
+        <p>
+            <strong>Category:</strong>
+            <span id="category"></span>
+        </p>
+
+    </div>
+
+    <div id="evaluationSection" class="hidden">
+
+        <h3>Requirement Quality Evaluation</h3>
+
+        <h4>Before Clarification</h4>
+
+        <p>Clarity: <span id="beforeClarity"></span>/5</p>
+
+        <p>Completeness:
+            <span id="beforeCompleteness"></span>/5
+        </p>
+
+        <p>Testability:
+            <span id="beforeTestability"></span>/5
+        </p>
+
+        <p>Ambiguity:
+            <span id="beforeAmbiguity"></span>/5
+        </p>
+
+
+        <h4>After Clarification</h4>
+
+        <p>Clarity: <span id="afterClarity"></span>/5</p>
+
+        <p>Completeness:
+            <span id="afterCompleteness"></span>/5
+        </p>
+
+        <p>Testability:
+            <span id="afterTestability"></span>/5
+        </p>
+
+        <p>Ambiguity:
+            <span id="afterAmbiguity"></span>/5
+        </p>
+
+
+        <h4>Improvement Summary</h4>
+
+        <p id="improvementSummary"></p>
+
+    </div>
+
+    <p id="status"></p>
+
+    <script src="popup.js"></script>
+
+</body>
+</html>
